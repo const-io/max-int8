@@ -1,4 +1,4 @@
-const-max-int8
+Max Int8
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
@@ -17,18 +17,25 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 ## Usage
 
 ``` javascript
-var foo = require( 'compute-const-max-int8' );
+var MAX_INT8 = require( 'compute-const-max-int8' );
 ```
 
-#### foo( arr )
+#### MAX_INT8
 
-What does this function do?
+Maximum 8-bit signed integer.
+
+``` javascript
+MAX_INT8 === Math.pow( 2, 7 ) - 1;
+```
 
 
 ## Examples
 
 ``` javascript
-var foo = require( 'compute-const-max-int8' );
+var MAX_INT8 = require( 'compute-const-max-int8' );
+
+console.log( MAX_INT8 );
+// returns 127
 ```
 
 To run the example code from the top-level application directory,
