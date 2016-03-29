@@ -1,27 +1,21 @@
-/* global require, describe, it */
 'use strict';
 
 // MODULES //
 
-var // Expectation library:
-	chai = require( 'chai' ),
-
-	// Module to be tested:
-	CONST = require( './../lib' );
-
-
-// VARIABLES //
-
-var expect = chai.expect,
-	assert = chai.assert;
+var tape = require( 'tape' );
+var pow = require( 'math-power' );
+var MAX_INT8 = require( './../lib' );
 
 
 // TESTS //
 
-describe( 'compute-const-max-int8', function tests() {
+tape( 'the main export is a number', function test( t ) {
+	t.ok( true, __filename );
+	t.equal( typeof MAX_INT8, 'number', 'main export is a number' );
+	t.end();
+});
 
-	it( 'should export a number', function test() {
-		expect( CONST ).to.be.a( 'number' );
-	});
-
+tape( 'the exported value equals 2**7 - 1', function test( t ) {
+	t.equal( MAX_INT8, pow(2,7)-1, 'equals 2**7-1' );
+	t.end();
 });
