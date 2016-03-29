@@ -8,14 +8,14 @@ MAX INT8
 ## Installation
 
 ``` bash
-$ npm install compute-const-max-int8
+$ npm install const-max-int8
 ```
 
 
 ## Usage
 
 ``` javascript
-var MAX_INT8 = require( 'compute-const-max-int8' );
+var MAX_INT8 = require( 'const-max-int8' );
 ```
 
 #### MAX_INT8
@@ -30,7 +30,7 @@ MAX_INT8 === (Math.pow(2,7) - 1);
 ## Examples
 
 ``` javascript
-var MAX_INT8 = require( 'compute-const-max-int8' );
+var MAX_INT8 = require( 'const-max-int8' );
 
 console.log( MAX_INT8 );
 // returns 127
@@ -100,8 +100,8 @@ $ make view-browser-tests
 Copyright &copy; 2015-2016. The [Compute.io][compute-io] Authors.
 
 
-[npm-image]: http://img.shields.io/npm/v/compute-const-max-int8.svg
-[npm-url]: https://npmjs.org/package/compute-const-max-int8
+[npm-image]: http://img.shields.io/npm/v/const-max-int8.svg
+[npm-url]: https://npmjs.org/package/const-max-int8
 
 [build-image]: http://img.shields.io/travis/const-io/max-int8/master.svg
 [build-url]: https://travis-ci.org/const-io/max-int8
